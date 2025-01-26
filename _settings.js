@@ -10,5 +10,5 @@ const _settings = {
   headerFeature: "timer", // "timer", "commands", "text", "tasks-only"
   headerCustomText: "Custom Text", // headerFeature above must be "text"
   botResponsePrefix: "🤖💬 ", // default bot message prefix
-  testMode: true, // true or false - for testing purposes
+  testMode: false, // true or false - for testing purposes
 };

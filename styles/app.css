@@ -126,7 +126,7 @@
     background-color: #e0e0e0;
     border: 5px solid #000200; /* Add border around the container */
     border-radius: 100px; /* Makes the container circular */
-    overflow: hidden; /* Ensure progress stays within the border */
+    overflow: visible; /* Ensure progress stays within the border */
 }
 
 
@@ -150,11 +150,14 @@
 
 .progress-image {
     position: absolute;
-	z-index: 3; /* Lower z-index to allow the image to sit on top */
-    top: 0;
+    z-index: 5; /* Ensure the image is on top */
+    top: 50%;
     left: 0; /* Start at the beginning of the bar */
-    transform: translate(100%, -50%);
-    width:70px; /* Adjust size as needed */
-    height: 70px; /* Keep it proportional */
+    transform: translate(-50%, -50%); /* Center the image vertically */
+    width: 90px; /* Adjust size as needed */
+    height: 90px; /* Keep it proportional */
+    background-image: url("/strangest_tasklist/bar_images/giphy.gif");
+    background-size: cover; /* Ensure the GIF fits the element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     transition: left 0.3s ease; /* Smooth movement */
 }

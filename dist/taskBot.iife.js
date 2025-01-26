@@ -381,6 +381,7 @@ var l = (m, p, T) => (
           : l(this, b).toLowerCase() === "text" &&
             this.renderCustomText(l(this, M));
     }
+    
     renderTaskCount() {
         // Get completed and total tasks
         let completedTasks = this.userList.tasksCompleted;
@@ -395,20 +396,20 @@ var l = (m, p, T) => (
             progressBar.style.width = `${percentage}%`;
         }
     
-        // Update the task count text
-        const taskCountElement = document.querySelector(".task-count");
-        if (taskCountElement) {
-            taskCountElement.innerText = `${completedTasks}/${totalTasks}`;
-        }
-    
         // Move the progress image
         const progressImage = document.querySelector(".progress-image");
         if (progressImage) {
             progressImage.style.left = `${percentage}%`;
         }
+    
+        // Update the task count text
+        const taskCountElement = document.querySelector(".task-count");
+        if (taskCountElement) {
+            taskCountElement.innerText = `${completedTasks}/${totalTasks}`;
+        }
     }
     
-      
+    
     renderTimer() {
       document.querySelector(".timer").classList.remove("hidden");
     }
