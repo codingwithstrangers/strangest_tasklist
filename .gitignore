@@ -3,7 +3,7 @@ coverage/
 
 # Dependency directories
 node_modules/
-
+_auth.js
 # dotenv environment variable files
 .env
 .env.local

@@ -18,16 +18,17 @@ const _styles = {
   headerBorderRadius: "8px", // px value
   headerMarginBottom: "6px", // px value
   headerPadding: "12px", // px value
-  headerBackgroundColor: "rgba(0, 0, 0, 0.7)", // rgba value https://rgbcolorpicker.com/
+  headerBackgroundColor: "rgba(59, 20, 73, 0.7)", // rgba value https://rgbcolorpicker.com/
   headerFontSize: "18px", // px value
   headerFontColor: "#FFFFFF", // hex value
   headerFontWeight: "normal", // "normal", "lighter", "bold"
+  
 
   // Card Styles
   cardGapBetween: "6px", // px value
   cardBorderRadius: "8px", // px value
   cardPadding: "12px", // px value
-  cardBackgroundColor: "rgba(0, 0, 0, 0.7)", // rgba value https://rgbcolorpicker.com/
+  cardBackgroundColor: "rgba(30, 92, 58, 0.7)", // rgba value https://rgbcolorpicker.com/
 
   // Username Styles
   usernameFontSize: "18px", // px value
